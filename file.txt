@@ -1,1 +1,28 @@
 create to test the webhook triggers 
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+                sh "ls -la"
+            }
+        }
+        stage('stage2') {
+            steps {
+                echo 'Hello World'
+            }
+        }        
+        stage('stage3') {
+            steps {
+                echo 'Hello World'
+            }
+        }        
+        stage('stage4') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}

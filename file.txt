@@ -1,4 +1,3 @@
-create to test the webhook triggers 
 pipeline {
     agent any
 
